@@ -1,0 +1,90 @@
+@import "_variables";
+
+.header {
+  background-color: darkblue;
+  color: $primary-text-color;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+.header-title {
+  font-size: 8rem;
+  text-align: center;
+  padding: 2rem;
+}
+.section-1 {
+  height: 95vh;
+}
+.section-title-1 {
+  font-size: 8rem;
+  text-align: center;
+  padding: 3rem;
+}
+.section-2 {
+  height: 95vh;
+}
+.section-title-2 {
+  font-size: 8rem;
+  text-align: center;
+  padding: 3rem;
+}
+.about-text {
+  font-size: 3rem;
+  margin: 0;
+  height: 45rem;
+  width: 60rem;
+  text-align: center;
+  position: relative;
+  left: 80rem;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    height: 50vh;
+  }
+  .header-title {
+    width: 95%;
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+    left: 3rem;
+    width: 30rem;
+    top: 18rem;
+    height: 45vh;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 55vh;
+  }
+  .about-text {
+    left: 10rem;
+    width: 80vw;
+    top: 50vh;
+    height: 45vh;
+    margin: 0;
+  }
+}
+
+.title-1 {
+  font-size: 5rem;
+  color: $primary-text-color;
+  position: relative;
+  left: 25rem;
+  top: 45rem;
+  width: 20vw;
+}
+
+.title-2 {
+  font-size: 5rem;
+  color: $primary-text-color;
+  position: relative;
+  left: 68vw;
+  top: 38rem;
+  width: 15vw;
+}

@@ -1,0 +1,103 @@
+@import "_variables";
+@import "mixins";
+
+.section-3 {
+  background-color: darkblue;
+  color: $primary-text-color;
+  height: 80vh;
+}
+.section-title-3 {
+  font-size: 8rem;
+  text-align: center;
+  padding: 5rem;
+}
+
+.container-4 {
+  height: 50vh;
+  @include flex-row-center;
+}
+.avocado {
+  height: 30rem;
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.fish {
+  height: 30rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.chicken {
+  height: 30rem;
+  width: 60rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.food1-header {
+  font-size: 3rem;
+  color: $primary-text-color;
+  text-align: center;
+  padding: 5rem;
+}
+
+.food2-header {
+  font-size: 3rem;
+  color: $primary-text-color;
+  text-align: center;
+  padding: 5rem;
+}
+
+.food3-header {
+  font-size: 3rem;
+  color: $primary-text-color;
+  text-align: center;
+  padding: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .section-title-3 {
+    font-size: 5rem;
+  }
+  .container-4 {
+    @include flex-col-center;
+  }
+  .avocado {
+    height: 20rem;
+    width: 60%;
+  }
+  .fish {
+    height: 20rem;
+    width: 60%;
+  }
+  .chicken {
+    height: 20rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-3 {
+    height: 170vh;
+  }
+  .container-4 {
+    @include flex-col-center;
+  }
+  .avocado {
+    height: 30vh;
+    width: 50%;
+  }
+  .fish {
+    height: 30vh;
+    width: 50%;
+  }
+  .chicken {
+    height: 30vh;
+    width: 50%;
+  }
+}

@@ -1,0 +1,39 @@
+.redbridge {
+  height: 45rem;
+  width: 65rem;
+  margin: 0;
+  position: absolute;
+  left: 8rem;
+  transition: all 0.3s;
+  border-radius: 10%;
+}
+
+.redbridge:hover {
+  border-radius: 0;
+  filter: sepia(100%);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .redbridge {
+    height: 15rem;
+    width: 55vw;
+  }
+  .section-1 {
+    height: 90vh;
+  }
+  .section-title-1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .redbridge {
+    height: 40vh;
+  }
+  .section-1 {
+    height: 110vh;
+  }
+}

@@ -1,0 +1,66 @@
+@import "_flag";
+@import "_header.scss";
+@import "_bridge.scss";
+@import "_city.scss";
+@import "_variables";
+@import "_food";
+@import "_mixins";
+
+html,
+body,
+* {
+  margin: 0rem;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: darkblue;
+  color: $primary-text-color;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .container-2 {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    height: 25vh;
+    font-size: 8rem;
+  }
+
+  .container-3 {
+    height: 65vh;
+  }
+  .section-1 {
+    height: 85vh;
+  }
+  .section-title-1 {
+    font-size: 5rem;
+  }
+}
+#navbar {
+  list-style: none;
+  text-align: center;
+  font-size: 30rem;
+  height: 25vh;
+}
+#navbar ul {
+  margin: 0;
+  width: 100%;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  color: $primary-text-color;
+  text-decoration: none;
+  padding: 3rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+#navbar a:hover {
+  color: rgb(21, 194, 21);
+  text-decoration: underline;
+}
